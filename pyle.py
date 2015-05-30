@@ -71,6 +71,9 @@ class Pyle:
         self.venv_path = os.path.join(self.config_path,
                                       self.config['venv_root'])
 
+        # Check that the venv exists
+        self.ensure_venv()
+
         # Run the program
         self.call_args(self.args.args)
 

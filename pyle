@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+
+if __name__ == '__main__':
+    try:
+        import pyle
+    except ImportError:
+        from . import pyle
+    pyle.Pyle()
