@@ -1,5 +1,5 @@
-language: python 
+language: python
 python:
   - "3.4"
-install: pip install -r requirements.txt --use-mirrors 
-script: python setup.py test 
+install: pip install -r requirements.txt --use-mirrors
+script: python -m unittest discover
